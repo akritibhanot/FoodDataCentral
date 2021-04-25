@@ -1,0 +1,74 @@
+@{ ViewData["Title"] = "Food Selection"; }
+@using Microsoft.Win32.SafeHandles
+@model Root
+<h1>@ViewData["Title"]</h1>
+
+   <body>
+    <p>
+        Nutrition facts labels help to maintain better eating habits and aid in attaining a balanced energy level.
+        While there are many essential nutrients, they can be broken into two categories: macronutrients and micronutrients.
+        Macronutrients are eaten in large amounts and include the primary building blocks of your diet — protein, carbohydrates, and fat — which provide your body with energy.
+    </p>
+
+    <form asp-controller="Home" asp-action="GetFoodDataFromApi">
+        <label asp-for="QueryInput">Food Category</label>
+        <input asp-for="QueryInput" placeholder="Food product to get some brands" />
+        <input type="submit" />
+    </form>
+
+    <br>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Brand Name
+                </th>
+                <th>
+                    Brand Owner
+                </th>
+                <th>
+                    Market Country
+                </th>
+                <th>
+                    Ingredients
+                </th>
+                <th>
+                    Published Date
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var food in Model.foods)
+            {
+<tr>
+    <td>
+        <p>@food.fdcId</p>
+    </td>
+    <td>
+        <p>@food.brandName</p>
+    </td>
+    <td>
+        <p>@food.brandOwner</p>
+    </td>
+    <td>
+        <p>@food.marketCountry</p>
+    </td>
+    <td>
+        <p>@food.ingredients</p>
+    </td>
+    <td>
+        <p>@food.publishedDate</p>
+    </td>
+</tr>
+}
+
+    </table>
+</body>
+</html>

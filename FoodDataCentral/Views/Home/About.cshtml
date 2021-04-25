@@ -1,0 +1,130 @@
+﻿@{ ViewData["Title"] = "About"; }
+
+
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+body {background-color: powderblue;}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+p {
+  color: ##000000;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size:20px
+}
+h2{ text-align: center }
+
+    body {
+        background-image: url("images/background.jpeg");
+        background-color: #ccff99
+    }
+</style>
+<body>
+    <p align="centre">
+        <h1> About Our Team</h1>
+        <br>
+    </p>
+    <div>
+        <div class="container">
+            <p align="justify">
+                We are Group 9 of Distributed Information System Course we joined USF in Spring 2020 (ISM 6225) at University of South Florida.
+                We are currently pursuing our MS in Business Analytics & Information Systems from Muma College of Business.
+                Our motive behind this assignment is to have good hands on experience in web technologies by creating website using HTMl,CSS, Javascript. As this will give us sound knowledge of the front end system.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="~/images/Akriti.png" alt="Akriti" style="width:100%">
+                <div class="container">
+                    <h2>Akriti Bhanot</h2>
+                    <p class="title">Web developer</p>
+                    <p>Akriti is a student at USF's Business Analytics and Information Systems graduate program. Her contributions include designing and developing various HTML and CSS pages for the website along with the Model,View,Controller Architecture Pages . She also helped the team with designing the logical data model for the database.</p>
+                    <p>akritibhanot@usf.edu</p>
+                    <a href="https://github.com/akritibhanot">Github</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="~/images/Kavin.PNG" alt="Kavin" style="width:100%">
+                <div class="container">
+                    <h2>Kavin Veerapandian</h2>
+                    <p class="title">Web Developer</p>
+                    <p>Kavin is a student at USF's Business Analytics and Information Systems graduate program. His contributions include designing and developing various HTML and CSS pages for the website along with the MVC Architecture Pages. He also did the initial research work of what should be the theme of the website and from where should we extract the data.</p>
+                    <p>kavinv@usf.edu</p>
+                    <a href="https://github.com/veerak2">Github</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="~/images/Megha.jpg" alt="Megha" style="width:100%">
+                <div class="container">
+                    <h2>Megha Veer Ji Marhatta</h2>
+                    <p class="title">Web Developer</p>
+                    <p>Megha is a student at USF's Business Analytics and Information Systems graduate program. Her contribution was in designing web pages using HTML and CSS along with the Model,View,Controller Architecture Pages. She was also involved in designing the database model to store the data.</p>
+                    <p>mmarhatta@usf.edu</p>
+                    <a href="https://github.com/mmarhatta">Github</a>
+
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <img src="~/images/er" alt="erdiagram" style="width:100%">
+            <div>
+
+</body>
+</html>
